@@ -1,0 +1,123 @@
+.HomeMoives {
+  background-color: black;
+  color: white;
+  .CenterContent {
+    margin: 40px auto;
+    padding: 20px;
+
+    .Movie-Card {
+      width: calc(100% / 5 - 10px);
+      margin-right: 12px;
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      .img-fluid {
+        transition: 0.3s;
+      }
+      .btns {
+        position: absolute;
+        bottom: -40px;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        transition: 0.3s;
+        .btn1 {
+          border: 1px solid #ebb134;
+          cursor: pointer;
+          color: #ebb134;
+          padding: 5px 12px;
+          border-radius: 4px;
+          transition: 0.2s;
+          &:hover {
+            background-color: #ebb134;
+            color: black;
+          }
+        }
+      }
+
+      &:hover {
+        .img-fluid {
+          transform: translateY(-15px);
+        }
+        .Movies-details {
+          height: 180px;
+          margin-top: -60px;
+        }
+        .btns {
+          bottom: 14px;
+        }
+      }
+      .ribbon-wrapper {
+        width: 85px;
+        height: 88px;
+        overflow: hidden;
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        .ribbon {
+          font: bold 15px sans-serif;
+          color: #333;
+          text-align: center;
+          transform: rotate(-45deg);
+          position: relative;
+          padding: 7px 0;
+          top: 15px;
+          left: -30px;
+          width: 120px;
+          background-color: #ebb134;
+          color: #fff;
+        }
+      }
+      .Movies-details {
+        background-color: #1e1e1e;
+        padding: 10px;
+        height: 120px;
+        transition: 0.3s;
+        position: relative;
+        .movie-name {
+          font-size: 18px;
+          font-weight: 900;
+          color: #ebb134;
+        }
+        .type {
+          margin-top: 9px;
+          color: #026bffbf;
+        }
+        .year {
+          color: #ffffff8f;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .center-menu {
+    margin-top: 20px;
+    display: flex;
+    overflow: scroll;
+    justify-content: space-around;
+    .ternding {
+      cursor: pointer;
+      margin: 15px 0;
+      font-size: 20px;
+      font-weight: 600;
+      padding: 10px 23px;
+      border-radius: 8px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .CenterContent {
+      width: 100%;
+      .Movie-Content {
+        .Movie-Card {
+          .Movies-details {
+            .type,
+            .year {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

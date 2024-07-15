@@ -1,0 +1,94 @@
+.HomePage {
+  height: 700px;
+  position: relative;
+  color: white;
+  background: url("/homepage.jpg");
+  background-size: cover;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 8px;
+    left: 0;
+    bottom: -8px;
+    background-color: $red-color;
+  }
+
+  .HomeNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .Content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+    text-align: center;
+    .head {
+      font-family: $header-font;
+      font-weight: 900;
+      font-size: 49px;
+    }
+    .sub-head {
+      font-size: 24px;
+    }
+    .mail-head {
+      margin-top: 15px;
+      font-size: 20px;
+    }
+  }
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .Inputs {
+      width: 481px !important;
+      margin-right: 15px;
+      color: white;
+    }
+  }
+  @media (max-width: 992px) {
+    background-position-x: 64%;
+    .overlay {
+      background-color: rgb(0 0 0 / 67%);
+    }
+    .Content {
+      .head {
+        font-size: 37px;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    height: 550px;
+    img {
+      width: 1200px !important;
+      margin-left: -122%;
+    }
+    .Content {
+      margin-top: 50px;
+      padding: 40px;
+      padding-bottom: 0;
+      .head {
+        font-size: 32px;
+      }
+      .sub-head,
+      .mail-head {
+        font-size: 19px;
+        margin-top: 13px;
+      }
+    }
+    .btnSubmit {
+      font-size: 12px;
+    }
+    form {
+      padding: 10px;
+      .Inputs {
+        width: 269px !important;
+        margin-right: 6px;
+      }
+    }
+  }
+}

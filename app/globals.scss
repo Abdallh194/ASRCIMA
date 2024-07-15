@@ -1,0 +1,69 @@
+@import "bootstrap/dist/css/bootstrap.css"; //bootstrap
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"); //main font
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"); // LOGO FONT
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"); //header font
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+
+//vars
+
+$logo-font: "Permanent Marker", sans-serif;
+$header-font: "Montserrat";
+$cairo-font: "Cairo";
+$red-color: #e50914;
+a {
+  text-decoration: none !important;
+  color: white;
+}
+@import "Styles/Navbar";
+@import "Styles/HomePage";
+@import "Styles/About";
+@import "Styles/Footer";
+@import "Styles/LeftSideBar";
+@import "Styles/RightSideBar";
+@import "Styles/HomeMoives";
+@import "Styles/MovieNavbar";
+html {
+  font-family: $cairo-font !important;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.23) !important;
+}
+.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root,
+.css-1jy569b-MuiFormLabel-root-MuiInputLabel-root,
+.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input,
+.MuiButtonBase-root {
+  color: white !important;
+}
+
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgba(255, 255, 255, 0.23) !important;
+}
+::-webkit-scrollbar {
+  background-color: black;
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(77, 0, 0);
+}
+::-webkit-scrollbar-corner {
+  background-color: rgb(0, 0, 0);
+}
+.progressCircle {
+  display: block;
+  margin-top: 50%;
+  margin-left: 50%;
+}
+// Glbal Classes
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}

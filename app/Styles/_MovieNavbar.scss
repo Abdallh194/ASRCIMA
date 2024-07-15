@@ -1,0 +1,65 @@
+.MovieNavbar {
+  background-color: $red-color !important;
+  position: fixed;
+  width: 100%;
+  padding: 8px 30px;
+  z-index: 100;
+  .logo {
+    font-size: 25px;
+    font-family: $logo-font;
+    span {
+      color: black;
+    }
+  }
+  // navbar setting
+  .me-auto {
+    font-family: $logo-font;
+    margin-left: 50px;
+    .Menu-Lies {
+      font-size: 20px;
+      font-weight: 500;
+      margin-right: 20px;
+      color: white;
+    }
+  }
+  .dropdown-menu {
+    background-color: white;
+    width: 232px;
+    text-align: center;
+    width: 300px;
+    padding: 20px 10px;
+    font-size: 18px;
+
+    a {
+      color: $red-color;
+      font-family: $header-font;
+      margin: 10px 0;
+      &:hover {
+        background-color: transparent;
+        color: black;
+      }
+    }
+  }
+  .login-btn {
+    background-color: white;
+    color: red;
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-weight: 800;
+    transition: 0.2s;
+    border: 1px solid white;
+    &:hover {
+      background-color: transparent;
+      color: white;
+    }
+  }
+  @media (max-width: 992px) {
+    .dropdown-menu {
+      width: 100%;
+      background-color: white;
+      a {
+        color: black;
+      }
+    }
+  }
+}

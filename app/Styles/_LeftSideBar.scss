@@ -1,0 +1,81 @@
+.sideBar-Left {
+  text-align: right;
+  left: 0;
+  padding: 0px 10px 20px 12px;
+
+  position: fixed;
+  height: 92vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 72px;
+  padding: 20px 0;
+
+  .head {
+    font-size: 22px;
+    font-weight: 500;
+    span {
+      font-family: $logo-font;
+      color: $red-color;
+    }
+  }
+  .social-icon {
+    width: 32px;
+    height: 32px;
+    padding: 5px;
+    border-radius: 30px;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 20px 0;
+  }
+  .social-name {
+    margin-right: 13px;
+    font-size: 20px;
+  }
+  .commons {
+    .common-head {
+      font-size: 21px;
+      font-weight: 800;
+      color: #ff7800;
+    }
+    .ternding {
+      font-size: 17px;
+      margin-top: 10px;
+      padding: 5px;
+      cursor: pointer;
+      position: relative;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: rgb(30, 30, 30);
+      }
+    }
+  }
+  @media (max-width: 1400px) {
+    .head {
+      font-size: 18px;
+    }
+    .social-name {
+      font-size: 15px;
+    }
+    .commons {
+      .common-head {
+        font-size: 15px;
+      }
+      .ternding {
+        font-size: 13px;
+        margin-top: 14px;
+        padding: 0px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    display: none;
+  }
+}

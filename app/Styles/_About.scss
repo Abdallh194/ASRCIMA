@@ -1,0 +1,184 @@
+.About {
+  padding: 70px 0px;
+  margin-bottom: 130px;
+  .Info-Card {
+    padding-right: 60px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    .top-head {
+      font-size: 32px;
+    }
+    .main-head {
+      font-size: 100px;
+      font-weight: 800;
+      font-family: $header-font;
+      margin-top: -20px;
+    }
+    .bg-head {
+      width: fit-content;
+      position: relative;
+      background: linear-gradient(to right, #850007, $red-color);
+      color: white;
+      left: 68px;
+      padding: 10px 54px;
+      font-size: 29px;
+      font-weight: 700;
+    }
+    .desc {
+      margin-top: 25px;
+      font-size: 23px;
+      width: 70%;
+    }
+    .more {
+      background: linear-gradient(to right, #850007, $red-color);
+      color: white;
+      font-weight: 700;
+      font-size: 22px;
+      margin-top: 48px;
+      padding: 10px 20px;
+    }
+  }
+  .Image-Card {
+    padding: 0;
+    position: relative;
+    display: flex;
+    .img-fluid {
+      position: relative;
+      z-index: 1;
+    }
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 70%;
+      height: 40px;
+      background: linear-gradient(to right, #850007, $red-color);
+      z-index: 1;
+    }
+    &::before {
+      top: -20px;
+      right: 0;
+      z-index: 2;
+    }
+    &::after {
+      bottom: -20px;
+      left: 0;
+    }
+    .aquar {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      right: -75px;
+      bottom: -75px;
+      border: 27px solid $red-color;
+      z-index: 0;
+    }
+  }
+  .row {
+    margin-top: 90px;
+  }
+  @media (max-width: 1650px) {
+    .Info-Card {
+      .main-head {
+        font-size: 94px;
+      }
+      .top-head {
+        font-size: 28px;
+      }
+      .bg-head {
+        padding: 10px 46px;
+        font-size: 20px;
+      }
+      .desc {
+        font-size: 20px;
+        width: 82%;
+      }
+    }
+  }
+  @media (max-width: 1400px) {
+    .Info-Card {
+      .main-head {
+        font-size: 77px;
+      }
+      .top-head {
+        font-size: 25px;
+      }
+      .bg-head {
+        padding: 10px 37px;
+        font-size: 17px;
+      }
+      .desc {
+        font-size: 17px;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .Info-Card {
+      padding-right: 27px;
+      .main-head {
+        font-size: 60px;
+        margin-top: -8px;
+      }
+      .top-head {
+        font-size: 21px;
+      }
+      .bg-head {
+        padding: 10px 20px;
+        font-size: 15px;
+        left: 36px;
+      }
+      .desc {
+        width: 85%;
+      }
+      .more {
+        font-size: 17px;
+        margin-top: 23px;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    padding: 0;
+    margin-bottom: 50px;
+    .Info-Card {
+      padding: 0;
+      margin-top: 50px;
+      align-items: flex-start;
+      .bg-head {
+        width: 100%;
+        left: 0;
+        padding: 17px 10px;
+        text-align: center;
+      }
+      .main-head {
+        font-size: 55px;
+      }
+      .main-head,
+      .top-head,
+      .more {
+        margin-left: 10px;
+      }
+      .desc {
+        width: 100%;
+        padding: 7px;
+        text-align: left;
+      }
+    }
+    .Image-Card {
+      &::before,
+      &::after {
+        height: 32px;
+      }
+      &::before {
+        top: -16px;
+      }
+      &::after {
+        bottom: -16px;
+      }
+      .aquar {
+        display: none;
+      }
+    }
+  }
+}
